@@ -1,0 +1,138 @@
+.sports_info_wrap {
+    margin-bottom: 15px;
+    border: 2px solid #eee;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 576px) {
+        grid-gap: 10px;
+        grid-template-columns:1fr 1fr;
+    }
+    .sports_item {
+        border: 1px solid #93dbff;
+        background: #f7fcff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img {
+            margin-bottom: 10px;
+        }
+        p {
+            color: #114361;
+            font: 500 1rem 'Roboto', sans-serif; 
+        }
+    }
+}
+
+.best_sport_casino {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 20px;
+    padding: 15px;
+    background: #fefbdb;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+    }
+    .best_sport_img {
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            height: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .best_sport_info_wrap {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        grid-gap: 15px;
+        align-items: start;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        .list_best_wrap {
+            ul {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 7px;
+                margin-bottom: 10px;
+                li {
+                    padding-left: 20px;
+                    font: 400 .87rem/22px 'Roboto', sans-serif;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        background: url(../img/main/check.svg) no-repeat center center;
+                        background-size: 15px 15px;
+                        height: 15px;
+                        width: 15px;
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                    }
+                }
+            }
+        }
+        .read {
+            text-decoration: underline;
+            color: #063f70;
+            font: 700 1rem 'Roboto', sans-serif;
+        }
+        .pay_best_box {
+            margin-bottom: 15px;
+            p {
+                margin-bottom: 12px;
+                font: 500 1rem 'Roboto', sans-serif;
+            }
+            .pay_img_wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width: 990px) {
+                    justify-content: space-around;
+                }
+            }
+            img {
+                max-width: 100%;
+                max-width: 100px;
+                margin: 0 10px;
+                max-height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .register {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 10px;
+        background: #357a10;
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font: 700 1.125rem 'Roboto', sans-serif;
+        @media (max-width: 1200px) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+    .best_sport_info_title {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: space-between;
+        .best_sport_title {
+            font: 700 1.4rem 'Roboto', sans-serif;
+        }
+    }
+}

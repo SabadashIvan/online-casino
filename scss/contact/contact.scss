@@ -1,0 +1,55 @@
+.contact_wrap {
+    border: 2px solid #eee;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    .contact_title {
+        font: 700 1.25rem 'Roboto', sans-serif;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        border-bottom: 2px solid #eee;
+    }   
+    .contact_text {
+        font: 400 .95rem/22px 'Roboto', sans-serif; 
+        a,span {
+            color: #063f70;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    .form_wrap {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        textarea {
+            resize: none;
+            outline: none;
+            appearance: none;
+            border: 1px solid #eee;
+            padding: 10px;
+            height: 150px;
+            font: 400 1rem 'Roboto', sans-serif; 
+        }
+        input {
+            font: 400 1rem 'Roboto', sans-serif; 
+            padding: 10px;
+            outline: none;
+            appearance: none;
+            border: 1px solid #eee;
+        }
+        button {
+            color: #fff;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            letter-spacing: 1.1px;
+            font: 700 1.125rem 'Roboto', sans-serif; 
+            box-sizing: border-box;
+            background: #063f70;
+        }
+    }
+}
