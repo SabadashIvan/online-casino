@@ -135,4 +135,22 @@
             font: 700 1.4rem 'Roboto', sans-serif;
         }
     }
+    .best_sport_bonus {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        p:first-child {
+            margin-right: 15px;
+        }
+        p {
+            color: #000;
+            margin-bottom: 5px;
+            font: 500 1.05rem 'Roboto', sans-serif;
+            span {
+                font: 700 1.2rem 'Roboto', sans-serif;
+                color: rgb(158, 22, 22);
+            }
+        }
+    }
 }

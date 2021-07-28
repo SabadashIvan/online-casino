@@ -1509,6 +1509,28 @@ header {
             justify-content: space-between; }
     .best_sport_casino .best_sport_info_title .best_sport_title {
       font: 700 1.4rem 'Roboto', sans-serif; }
+  .best_sport_casino .best_sport_bonus {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 5px; }
+    .best_sport_casino .best_sport_bonus p:first-child {
+      margin-right: 15px; }
+    .best_sport_casino .best_sport_bonus p {
+      color: #000;
+      margin-bottom: 5px;
+      font: 500 1.05rem 'Roboto', sans-serif; }
+      .best_sport_casino .best_sport_bonus p span {
+        font: 700 1.2rem 'Roboto', sans-serif;
+        color: #9e1616; }
 
 .rules_forms {
   margin-bottom: 15px;
