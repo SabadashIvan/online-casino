@@ -1087,9 +1087,6 @@ header {
           font: 400 1rem/24px 'Roboto', sans-serif; }
       .home_page_wrap .content_item .about_casino .about_casino_item:last-child {
         margin: 0; }
-  @media (max-width: 990px) {
-    .home_page_wrap .sidebars {
-      grid-row-start: 1; } }
   .home_page_wrap .sidebars_wrap {
     margin-bottom: 20px;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -2002,6 +1999,202 @@ header {
       text-align: center; }
       .casino_catalog_item .casino_btn_wrap .read:hover {
         border-radius: 10px; }
+
+.casino_sidebar_info .casino_sidebar_item {
+  padding: 10px 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d1d1d1;
+  font: 400 .95rem/21px 'Roboto', sans-serif; }
+  .casino_sidebar_info .casino_sidebar_item a {
+    color: #000;
+    text-decoration: underline; }
+
+.casino_sidebar_info .casino_sidebar_item:last-child {
+  border: none; }
+
+.sidebars_casino_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  padding: 10px 15px; }
+  .sidebars_casino_list li {
+    padding-left: 18px;
+    font: 400 .87rem/22px 'Roboto', sans-serif;
+    position: relative; }
+    @media (max-width: 768px) {
+      .sidebars_casino_list li {
+        font: 400 1rem/24px 'Roboto', sans-serif; } }
+    .sidebars_casino_list li::after {
+      content: '';
+      background: url(../img/main/check.svg) no-repeat center center;
+      background-size: 12px 12px;
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      left: 0;
+      top: 7px; }
+
+.visit {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font: 700 1rem 'Roboto', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  background: #3fa71f;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  display: block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .visit:hover {
+    border-radius: 15px; }
+
+.new_bonus {
+  background: #e8f8fc;
+  padding: 15px;
+  border: 1px solid #A8E3F2;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 768px) {
+    .new_bonus {
+      grid-template-columns: 1fr; } }
+  .new_bonus img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px; }
+  .new_bonus .new_bonus_title {
+    margin-bottom: 10px;
+    font: 700 1.4rem 'Roboto', sans-serif; }
+  .new_bonus .new_bonus_text {
+    margin-bottom: 30px;
+    font: 500 1rem/22px 'Roboto', sans-serif; }
+    @media (max-width: 990px) {
+      .new_bonus .new_bonus_text {
+        margin-bottom: 20px; } }
+  .new_bonus a {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    font: 700 1rem 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: #b11816;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    @media (max-width: 768px) {
+      .new_bonus a {
+        display: block; } }
+    .new_bonus a:hover {
+      border-radius: 15px; }
+
+.item_casino_xl {
+  border: 1px solid #063f70;
+  padding: 15px; }
+  .item_casino_xl .news_xl_wrap {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px; }
+    @media (max-width: 1200px) {
+      .item_casino_xl .news_xl_wrap {
+        grid-template-columns: 200px 1fr; } }
+    @media (max-width: 990px) {
+      .item_casino_xl .news_xl_wrap {
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid #000;
+        padding-bottom: 15px;
+        grid-gap: 15px; } }
+    .item_casino_xl .news_xl_wrap img {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      max-width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+      @media (max-width: 768px) {
+        .item_casino_xl .news_xl_wrap img {
+          height: auto; } }
+    .item_casino_xl .news_xl_wrap .post_title {
+      margin-bottom: 10px;
+      font: 700 1.25rem 'Roboto', sans-serif; }
+    .item_casino_xl .news_xl_wrap .casino_xl_bonus {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 10px; }
+      .item_casino_xl .news_xl_wrap .casino_xl_bonus p {
+        color: #000;
+        margin-right: 10px;
+        font: 500 1rem 'Roboto', sans-serif; }
+        .item_casino_xl .news_xl_wrap .casino_xl_bonus p span {
+          color: #b11816;
+          font: 700 1.25rem 'Roboto', sans-serif; }
+    .item_casino_xl .news_xl_wrap .post_text {
+      color: #000;
+      font: 400 1rem/26px 'Roboto', sans-serif; }
+    .item_casino_xl .news_xl_wrap .post_read {
+      display: inline-block;
+      margin-top: 15px;
+      color: #fff;
+      padding: 15px 40px;
+      text-align: center;
+      background: #3fa71f;
+      font: 400 1rem 'Roboto', sans-serif; }
+      @media (max-width: 990px) {
+        .item_casino_xl .news_xl_wrap .post_read {
+          width: 100%;
+          padding: 15px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          display: block; } }
+  .item_casino_xl .news_sm_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px; }
+    @media (max-width: 576px) {
+      .item_casino_xl .news_sm_wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px; } }
+    .item_casino_xl .news_sm_wrap .news_item:hover .title {
+      text-decoration: underline; }
+    .item_casino_xl .news_sm_wrap .news_item:hover img {
+      -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+              transform: scale(1.02); }
+    .item_casino_xl .news_sm_wrap .news_item img {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      max-width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      margin-bottom: 5px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .item_casino_xl .news_sm_wrap .news_item .title {
+      font: 500 1rem 'Roboto', sans-serif;
+      margin-bottom: 5px;
+      color: #000;
+      text-align: center; }
 
 .contact_wrap {
   border: 2px solid #eee;

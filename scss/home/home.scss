@@ -552,11 +552,7 @@
             }
         }
     }
-    .sidebars {
-        @media (max-width: 990px) {
-            grid-row-start: 1;
-        }
-    }
+   
     .sidebars_wrap {
         margin-bottom: 20px;
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
