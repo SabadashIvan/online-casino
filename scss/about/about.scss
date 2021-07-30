@@ -34,6 +34,11 @@
             }
         }
     }
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
     p {
         font: 400 .95rem/22px 'Roboto', sans-serif; 
         a,span {

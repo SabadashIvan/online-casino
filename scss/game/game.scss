@@ -1,0 +1,255 @@
+.gamblings_wrap {
+    margin-bottom: 25px;
+    .gamblings_title {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        background: #063f70;
+        grid-gap: 30px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        p {
+            padding: 15px;
+            color: #fff;
+            font: 700 1.1rem 'Roboto', sans-serif;
+            text-align: center;
+        }
+        p:nth-child(1) {
+            text-align: left;
+        }
+    }
+    .gamblings_item {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        padding: 15px;
+        grid-gap: 30px;
+        align-items: start;
+        @media (max-width: 768px) {
+            grid-template-columns:1fr 1fr;
+        }
+        .item_casino {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            grid-gap: 20px;
+            @media (max-width: 768px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-template-columns: 1fr;
+                align-items: center;
+            }
+            .img {
+                max-width: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+                @media (max-width: 768px) {
+                    margin: 0 auto;
+                    height: 175px;
+                    width: 175px;
+                }
+            }
+            .item_casino_info {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                @media (max-width: 768px) {
+                    max-width: 400px;
+                    margin: 0 auto;
+                }
+            }
+            ul {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 4px;
+                li {
+                    padding-left: 15px;
+                    font: 400 .87rem/22px 'Roboto', sans-serif;
+                    position: relative;
+                    @media (max-width: 768px) {
+                        font: 400 1rem/24px 'Roboto', sans-serif;  
+                    }
+                    &::after {
+                        content: '';
+                        background: url(../img/main/check.svg) no-repeat center center;
+                        background-size: 12px 12px;
+                        height: 12px;
+                        width: 12px;
+                        position: absolute;
+                        left: 0;
+                        top: 6px;
+                    }
+                }
+            }
+        }
+        .item_text {
+            text-align: center;
+            color: #940c0c;
+            font: 700 1.2rem 'Roboto', sans-serif;
+            span {
+                color: #000;
+                margin-top: 5px;
+                display: block;
+                font: 400 .87rem 'Roboto', sans-serif;
+            }
+        }
+        .item_btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 768px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+             a {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .play {
+                color: #fff;
+                margin-bottom: 10px;
+                background: #3fa71f;
+                font: 700 1rem 'Roboto', sans-serif;
+                padding: 10px;
+                transition: .3s;
+                &:hover {
+                    border-radius: 10px;
+                }
+            }
+            .read {
+                text-transform: none;
+                color: rgb(146, 146, 146);
+                font: 500 .95rem 'Roboto', sans-serif;
+            }
+        }
+    }
+    .gamblings_item:nth-child(2n) {
+        background: #e9f8ff;
+    }
+    .star_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+            height: 15px;
+            width: 15px;
+            margin: 0 2.5px;
+            object-fit: cover;
+            opacity: .5;
+        }
+    }
+    .one {
+        img:first-child {
+            opacity: 1;
+        }
+    }
+    .two {
+        img:first-child {
+            opacity: 1;
+        }
+        img:nth-child(2) {
+            opacity: 1;
+        }
+    }
+    .three {
+        img:first-child {
+            opacity: 1;
+        }
+        img:nth-child(2) {
+            opacity: 1;
+        }
+        img:nth-child(3) {
+            opacity: 1;
+        }
+    }
+    .four {
+        img:first-child {
+            opacity: 1;
+        }
+        img:nth-child(2) {
+            opacity: 1;
+        }
+        img:nth-child(3) {
+            opacity: 1;
+        }
+        img:nth-child(4) {
+            opacity: 1;
+        }
+    }
+    .five {
+        img:first-child {
+            opacity: 1;
+        }
+        img:nth-child(2) {
+            opacity: 1;
+        }
+        img:nth-child(3) {
+            opacity: 1;
+        }
+        img:nth-child(4) {
+            opacity: 1;
+        }
+        img:nth-child(5) {
+            opacity: 1;
+        }
+    }
+}
+
+
+.livedilers_wrap {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+    .livedilers_item {
+        position: relative;
+        @media (max-width: 576px) {
+            height: 100px;
+        }
+        img {
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        p {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font: 500 1rem 'Roboto', sans-serif;
+            color: #fff;
+            z-index: 9;
+        }
+    }
+}
+
+.games_sidebar_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 20px 10px;
+    .games_sidebar_item {
+        .games_img_wrap {
+            margin-bottom: 10px;
+            img {
+                max-width: 100%;
+                object-fit: contain;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        p {
+            text-align: center;
+            color: #063f70;
+            font: 500 .95rem 'Roboto', sans-serif;
+        }
+    }
+}
